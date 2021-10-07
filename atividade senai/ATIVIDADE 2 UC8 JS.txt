@@ -1,0 +1,24 @@
+let dataEvento = prompt("Informe a data no formato dd/mm/yyyy");
+let idadeParcicipante = Number(window.prompt("idade"));
+let qtdParticipantes = Number(window.prompt("Quantidade de participante"));
+let dataAtual = new Date();
+let diaDataAtual = dataAtual.getDate();
+let mesDataAtual = dataAtual.getMonth();
+let anoDataAtual = dataAtual.getFullYear();
+let dataAtualFormatada = "0" + diaDataAtual + "/" + "0" + mesDataAtual + "/" + anoDataAtual;
+
+if (dataEvento > dataAtualFormatada.toString()) {
+	alert("Evento liberado");
+	if (idadeParcicipante => 18) {
+		alert("Cadastro permitido");
+		if (qtdParticipantes < 101) {
+			alert("Cadastro de participantes permitida");
+		} else {
+			alert("Excedido o limite de participantes");
+		}
+	} else {
+	alert("Idade não permitida para cadastro!");
+	}
+} else {
+	alert("Cadastro de evento não permitido, data invalida");
+}
