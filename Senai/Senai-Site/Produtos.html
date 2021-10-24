@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+</head>
+<body>
+    <img src="head.png" alt="">
+    <div>
+    
+
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Galeria.html">Galeria</a></li>
+            <li><a href="Colecionaveis.html">Colecionaveis</a></li>
+            <li><a href="Cadastro.html">Cadastro</a></li> 
+                </ul>
+    
+
+</div>
+
+<div>
+
+    <title>Banner rotativo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <script language="JavaScript">
+    var ultimo=-1, dBanner;
+    function carrega(x) {dBanner=x;Banners()}
+    function Banners()
+    {
+    var MNews = new Array(); 
+    MNews[0]= '<A HREF="banner1.png" target="_blank"><IMG SRC="banner1.png" WIDTH="1000" HEIGHT="150" BORDER="0" ALT=""></a>';
+    
+    MNews[1]= '<A HREF="banner2.jfif" target="_blank"><IMG SRC="banner2.jfif" WIDTH="1000" HEIGHT="150" BORDER="0" ALT=""></a>'
+                    
+    while((Numero = parseInt(Math.random()*MNews.length))==ultimo);
+    dBanner.innerHTML=MNews[Numero];
+    
+    setTimeout("Banners()",10000);
+    }
+    </script></head>
+    <body bgcolor="#FFFFFF" topmargin=0 leftmargin=150 text="#000000" onLoad=carrega(this.divBanner)>
+    <table width="120" border="0" cellspacing="0" cellpadding="0" height="60" bordercolor="#000000">
+    <tr>
+    <td>
+    <div align="left" id=divBanner></div>
+    </td>
+    </tr>
+    </table>
+</div>
+<center><h1>GAME MANIA</h1></center>
+
+</body>
+</html>
