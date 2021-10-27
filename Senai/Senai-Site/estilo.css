@@ -1,0 +1,17 @@
+body {background-color:floralwhite;}
+
+h1 {font-size: 70px;}
+
+
+ul li a :hover {
+padding: 2px 10px;
+display: inline-block;
+
+background-color:black;
+color: burlywood;
+text-decoration: none;
+border-bottom: 3px solid palegoldenrod;
+}
+
+
+.head { color: palevioletred;}
